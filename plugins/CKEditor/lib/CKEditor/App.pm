@@ -471,7 +471,7 @@ sub entry_post_save {
 sub init_request {
 	my ($app) = @_;
 	my $plugin = MT->component('CKEditor');
-	
+
 	return if !($app->can('param'));
 
 	my $blog_id = $app->param('blog_id') or return;
